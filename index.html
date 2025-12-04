@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    .meu-botao {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;   
+    color: white;                
+    background-color: transparent;
+    border-radius: 0;             
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+    .lead {
+    display: flex;  
+    justify-content: center;         
+    gap: 20px;
+    }
+
+    .bg-cover {
+      background-image: url("Img/ImgIndex2.jpeg");
+      background-size: cover;   
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+    }
+  </style>
+</head>
+<body class="text-center text-white bg-dark">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-cover">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">Projeto Integrador 4</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="meu-botao" href="Alunos.html">Alunos</a>
+                </nav>
+            </div>  
+        </header>
+
+        <main class="px-3">
+            <h1>Atividades</h1>
+                <p class="lead" >
+                    <a href="Constante_Planck.html" class="meu-botao">Constante de Planck</a>
+                    <a href="pendulo.html" class="meu-botao">Pêndulo Simples</a>
+                </p>
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            <p>UNIFEI - 2025</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

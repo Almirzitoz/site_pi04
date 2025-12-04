@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pêndulo simples</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    .central-box {
+        width: 550px;
+        margin: 10px auto;
+        padding: 10px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .central-box img {
+        height: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .img-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img src="img/simboloUNIFEI.png" width="50px" style="margin-right: 20px;">
+            </a>
+            <img src="img/BCTEC.png" width="120px" style="margin-right: 20px;">
+            <a class="navbar-brand" href="#">Experimento dia 02/12</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#intro">Introdução</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#objetivo">Objetivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#material">Materiais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Procedimento">Procedimento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resultado">Resultados</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro" class="container py-5">
+        <header class="mb-4 text-center">
+            <h1 class="fw-bold">Pêndulo simples</h1>
+            <p class="text-secondary">Experimento didático afim de determinarmos a aceleração da gravidade</p>
+        </header>
+
+
+        <h2>Introdução</h2>
+        <div class="card bg-secondary bg-opacity-10 p-4 border-light">
+            <p>O pêndulo simples é um sistema formado por um fio e uma pequena massa que oscila para frente e
+                para trás. Observando o tempo dessas oscilações, podemos relacioná-lo com o comprimento do fio e,
+                assim, determinar a aceleração da gravidade. Este experimento permite compreender, de forma prática
+                e intuitiva, como o movimento do pêndulo revela uma das principais constantes físicas do nosso planeta.
+            </p>
+        </div>
+
+        <h2 style="margin-top: 20px;" id="objetivo">Objetivo </h2>
+        <div class="card bg-secondary bg-opacity-10 p-4 border-light">
+            <p>- Determinar o valor da aceleração da gravidade.</p>
+        </div>
+
+        <section id="material" class="container py-5">
+            <h2>Materiais</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Trena</li>
+                <li class="list-group-item">Fio de nylon</li>
+                <li class="list-group-item">Esfera</li>
+                <li class="list-group-item">Cronômetro</li>
+                <li class="list-group-item">Suporte metálico</li>
+                <li class="list-group-item">Celular</li>
+            </ul>
+        </section>
+
+        <h2 style="margin-top: 20px;" id="Procedimento">Procedimento </h2>
+        <h4>Parte 1</h4>
+        <div class="card bg-secondary bg-opacity-10 p-4 border-light">
+            <p>Estabelecemos 5 comprimentos(m) diferentes e cronometramos 10 períodos, depois tiramos a média dos
+                tempos e repetimos pelo menos 3 vezes a medição, abaixo o resultado dos dados:</p>
+
+            <div class="img-side">
+                <img src="Img/GraficoPendulo.jpeg" width="600px" alt="Medidas">
+            </div>
+
+            <p style="margin-top: 20px;">Após calculamos o tempo médio de cada oscilação e sua incerteza associada:</p>
+
+            <div class="img-side">
+                <img src="Img/ImgGraficoPenduloSimples2.jpg" width="600px" alt="Medidas">
+            </div>
+
+            <p style="margin-top: 20px;">Logo depois, utilizando o SciDAVis construimos um gráfico <strong>
+                    <italyc>T</italyc> x <italyc>&Sqrt;l</italyc>
+                </strong>
+                usamos uma regressão linear no gráfico para determinar a aceleração da gravidade e sua incerteza: </p>
+
+            <div class="img-side">
+                <img src="Img/GraficoTxL.jpg" width="600px" alt="Medidas">
+            </div>
+
+            <p style="margin-top: 20px;">O valor encontrado é para gravidade foi:</p>
+
+            <p style="text-align: center; font-size: 20px; margin: 0; font-weight:bold; border: 2px solid black;">𝑔 =
+                9,55 m/s<sup>2</sup></p>
+
+        </div>
+
+        <h4 style="margin-top: 20px;">Parte 2</h4>
+        <div class="card bg-secondary bg-opacity-10 p-4 border-light">
+
+            <p>Para segunda parte gravamos um video do movimento do pêndulo com comprimento de 0,5m, registrando duas
+                oscilações completas.</p>
+
+            <div style="text-align: center;">
+                <video src="Img/VideoPendulo.mp4" width="300px" controls alt="Vídeo pêndulo">
+                </video>
+            </div>
+
+            <p style="margin-top: 20px;">Após isso, utilizamos o software Tracker, para obter o gráfico que descreva a
+                função <italyc>X</italyc> x <italyc>T</italyc>. Para isso, foi necessário pegar os pontos de massa de
+                cada frame,
+                onde o pêndulo passava </p>
+
+            <div class="central-box">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Img/ImgTracker.jpeg" class="d-block w-100" alt="Imagem Tracker"">
+                        </div>
+                        <div class=" carousel-item">
+                            <img src="Img/ImgTracker2.jpeg" class="d-block w-100" alt="Imagem Tracker">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;">O gráfico encontrado foi o seguinte:</p>
+
+            <div class="img-side">
+                <img src="Img/ImagemGrafico.jpg" width="600px" alt="Gráfico Tracker">
+            </div>
+
+            <p style="margin-top: 20px;">Após o gráfico foi necessário analisar e achar uma função matemática que
+                descrevesse a curva observada:</p>
+
+            <p style="text-align: center; font-size: 20px; margin: 0; font-weight:bold;">x(t)= Asin(ωt + φ) + C</p>
+
+            <p style="margin-top: 20px;">Com essa função, fizemos um ajuste da curva por meio do SciDAVis e obtemos o
+                valor da frequência angular ω0 do pêndulo:</p>
+
+            <p style="text-align: center; font-size: 20px; margin: 0; font-weight:bold;">ω0 = (4.3057 ± 0,0070) rad/s
+            </p>
+
+            <p style="margin-top: 20px;">Com o valor de ω0, calculamos novamente a aceleração da gravidade e sua
+                respectiva incerteza: </p>
+
+            <p style="text-align: center; font-size: 20px; margin: 0; font-weight:bold; border: 2px solid black; ">𝑔 =
+                9,264 ± 0,030 m/s<sup>2</sup></p>
+        </div>
+
+        <h2 style="margin-top: 20px;" id="resultado">Resultados finais </h2>
+        <div class="card bg-secondary bg-opacity-10 p-4 border-light">
+            <p>Após acharmos os dois valores da gravidade deveriamos analisar e comparar seu valores e juntos com
+                o valor real da gravidade: <strong>𝑔 = 9,80 m/s<sup>2</sup></strong>:</p>
+
+            <p style="text-align: center; font-size: 20px; margin: 0;  ">Parte 1: 𝑔 = 9,55 m/s<sup>2</sup></p>
+            <p style="margin-top:20px;text-align: center; font-size: 20px; margin: 0;  ">Parte 2: 𝑔 = 9,26
+                m/s<sup>2</sup></p>
+
+
+            <p style="margin-top: 20px;">Ao analisar percebemos que o valor obtido a partir do gráfico T × √L (g =
+                9,55m/s²) ficou mais próximo do valor de
+                referência (9,80m/s²), porque o método utiliza médias de múltiplas medições e a
+                linearização do gráfico, tornando a determinação da gravidade mais precisa e menos
+                suscetível a erros pontuais.
+            </p>
+
+
+        </div>
+    </section>
+
+    <section class="container py-5" id="comentarios">
+        <h3>Comentários:</h3>
+        <input type="text" name="comentario" id="comentario" class="form-control" placeholder="Comentar">
+        <button id="adcionar" class="btn btn-light" style="margin-top: 2px;">Adcionar</button>
+        
+        <section id="coment"></section>
+    </section>
+    <script src="posts.js"></script>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>2025 — Constante de Planck</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
